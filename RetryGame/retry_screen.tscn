@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=3 uid="uid://isrbe8t18jdt"]
+
+[ext_resource type="FontFile" uid="uid://3pbjgstjjdd" path="res://manaspace/manaspc.ttf" id="1_0ebqv"]
+[ext_resource type="Script" path="res://RetryGame/retry_screen.gd" id="1_e8f81"]
+
+[node name="RetryScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_e8f81")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.366146
+anchor_top = 0.375
+anchor_right = 0.633854
+anchor_bottom = 0.625
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_0ebqv")
+theme_override_font_sizes/font_size = 50
+text = "You Died!
+
+
+
+ESC to leave"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Try Again Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.400521
+anchor_top = 0.449074
+anchor_right = 0.599479
+anchor_bottom = 0.537963
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_0ebqv")
+theme_override_font_sizes/font_size = 48
+text = "Try Again?"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Try Again Button" to="." method="_on_try_again_button_pressed"]

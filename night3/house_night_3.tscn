@@ -1,0 +1,348 @@
+[gd_scene load_steps=17 format=3 uid="uid://ctkg36p8bms83"]
+
+[ext_resource type="Script" path="res://night3/house_night_3.gd" id="1_x7b7k"]
+[ext_resource type="Texture2D" uid="uid://3lf0qdj8krmp" path="res://night3/where_you_die.png" id="4_mi6od"]
+[ext_resource type="Script" path="res://night3/CameraDead.gd" id="4_murdr"]
+[ext_resource type="Texture2D" uid="uid://b5kssltbkjrkc" path="res://night3/BloodOverlay.png" id="5_c48pk"]
+[ext_resource type="AudioStream" uid="uid://5e0cj0yo8igu" path="res://night3/wlakingupsonddead.wav" id="6_fcw5b"]
+[ext_resource type="AudioStream" uid="uid://bklxul3du4p3m" path="res://night3/blade-scrape_knife-104569.mp3" id="7_17qmf"]
+[ext_resource type="Texture2D" uid="uid://dwl2wbn1f8ekr" path="res://night3/burlapsack_onn.png" id="8_1pw62"]
+[ext_resource type="AudioStream" uid="uid://bfgv0ugv0mkpe" path="res://night3/punch-140236.mp3" id="8_rjbic"]
+[ext_resource type="PackedScene" uid="uid://cu5qlxbkb1gyp" path="res://night2/house_night_2.tscn" id="9_n828i"]
+
+[sub_resource type="Animation" id="Animation_cmotp"]
+resource_name = "Night_2_start"
+length = 8.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.2, 8),
+"transitions": PackedFloat32Array(1, 1, 2),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.2, 8),
+"transitions": PackedFloat32Array(1, 1, 2),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_50mqu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_1m6rl"]
+resource_name = "black_lol"
+length = 5.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_2t8ef"]
+resource_name = "coughing_10_sec"
+length = 10.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_vqy3o"]
+resource_name = "coughing_15_sec"
+length = 15.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 15),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 15),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_t42fs"]
+resource_name = "fade_to_black"
+length = 10.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ihpxj"]
+_data = {
+"Night_2_start": SubResource("Animation_cmotp"),
+"RESET": SubResource("Animation_50mqu"),
+"black_lol": SubResource("Animation_1m6rl"),
+"coughing_10_sec": SubResource("Animation_2t8ef"),
+"coughing_15_sec": SubResource("Animation_vqy3o"),
+"fade_to_black": SubResource("Animation_t42fs")
+}
+
+[node name="HouseNight3" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_x7b7k")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.710417
+anchor_right = 0.670833
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_mi6od")
+metadata/_edit_use_anchors_ = true
+
+[node name="CameraDead" type="Camera2D" parent="."]
+position = Vector2(0, -1)
+limit_left = -2000
+limit_top = 0
+limit_right = 3840
+limit_bottom = -1920
+position_smoothing_enabled = true
+position_smoothing_speed = 2.0
+drag_horizontal_enabled = true
+script = ExtResource("4_murdr")
+
+[node name="blood" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="TextureRect2" type="TextureRect" parent="blood"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_c48pk")
+
+[node name="deathtimer" type="Timer" parent="."]
+wait_time = 4.0
+one_shot = true
+
+[node name="punchsfx" type="Timer" parent="."]
+wait_time = 3.85
+one_shot = true
+
+[node name="knifetimer" type="Timer" parent="."]
+wait_time = 1.3
+one_shot = true
+
+[node name="punch2timer" type="Timer" parent="."]
+wait_time = 0.8
+one_shot = true
+
+[node name="toendtimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="BlackBG2" type="ColorRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1937.0
+offset_right = 995.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="Footies" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_fcw5b")
+pitch_scale = 0.7
+autoplay = true
+bus = &"Music"
+
+[node name="knife" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_17qmf")
+
+[node name="punch" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_rjbic")
+
+[node name="punch2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_rjbic")
+pitch_scale = 0.7
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="burlap" type="TextureRect" parent="CanvasLayer"]
+modulate = Color(1, 1, 1, 0.827451)
+anchors_preset = -1
+anchor_left = -0.1
+anchor_top = -0.859259
+anchor_right = 1.0
+anchor_bottom = 0.140741
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("8_1pw62")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="burlap2" type="TextureRect" parent="CanvasLayer"]
+modulate = Color(1, 1, 1, 0.752941)
+anchors_preset = -1
+anchor_left = -0.1
+anchor_top = 0.487037
+anchor_right = 1.0
+anchor_bottom = 1.487
+offset_left = 2112.0
+offset_top = 1080.0
+offset_right = 2112.0
+offset_bottom = 1080.04
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 3.14159
+mouse_filter = 2
+texture = ExtResource("8_1pw62")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="BlackBG" type="ColorRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1937.0
+offset_right = 995.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="BackgroundAnim" type="AnimationPlayer" parent="BlackBG"]
+autoplay = "Night_2_start"
+libraries = {
+"": SubResource("AnimationLibrary_ihpxj")
+}
+
+[node name="HouseNight2" parent="." instance=ExtResource("9_n828i")]
+visible = false
+layout_mode = 1
+
+[connection signal="timeout" from="deathtimer" to="." method="_on_deathtimer_timeout"]
+[connection signal="timeout" from="punchsfx" to="." method="_on_punchsfx_timeout"]
+[connection signal="timeout" from="knifetimer" to="." method="_on_knifetimer_timeout"]
+[connection signal="timeout" from="punch2timer" to="." method="_on_punch_2_timer_timeout"]
+[connection signal="timeout" from="toendtimer" to="." method="_on_toendtimer_timeout"]
+[connection signal="finished" from="Footies" to="." method="_on_footies_finished"]
