@@ -1,7 +1,9 @@
 # GiveMeYourHeart
 A Git for the UWF 2023 GameJam - Give Me Your Heart
 
-To run this game...
+To run this game download off of this google drive
+
+https://drive.google.com/file/d/1TRK1MbELkxUae02nvh36L3Zy1Ku5uH-e/view?usp=sharing
 
 To view the code of this game...
 
