@@ -1,11 +1,7 @@
 # GiveMeYourHeart
 A Git for the UWF 2023 GameJam - Give Me Your Heart
 
-To play the game, download it from of this google drive (godot games are not really supported on github I think)
-
-https://drive.google.com/file/d/1TRK1MbELkxUae02nvh36L3Zy1Ku5uH-e/view?usp=drive_link
-
-
+[To play the game, download it from of this google drive](https://drive.google.com/file/d/1TRK1MbELkxUae02nvh36L3Zy1Ku5uH-e/view?usp=drive_link) (godot games are not really supported on github I think)
 
 [To view the code of this game...](https://drive.google.com/file/d/11DxgImuJgP3F4wyzIhDD5_06R3GZAHAa/view?usp=sharing)
 
