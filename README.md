@@ -10,4 +10,4 @@ There is an extremly high chance of visual issues if played in other resolutions
 
 This is my first game ever and I'm very thankful for this opportunity to represent UWF!
 
-I will add some tips here if you get stuck
+-Parker Nunley
