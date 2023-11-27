@@ -5,7 +5,9 @@ To play the game, download it from of this google drive (godot games are not rea
 
 [https://drive.google.com/file/d/1TRK1MbELkxUae02nvh36L3Zy1Ku5uH-e/view?usp=sharing](https://drive.google.com/file/d/1TRK1MbELkxUae02nvh36L3Zy1Ku5uH-e/view?usp=sharing)
 
-To view the code of this game... still trying to figure this out
+To view the code of this game...
+
+[still trying to figure this out](https://drive.google.com/file/d/11DxgImuJgP3F4wyzIhDD5_06R3GZAHAa/view?usp=sharing)
 
 This game works best in 1920 x 1080 monitor resolution.
 There is an extremly high chance of visual issues if played in other resolutions.
